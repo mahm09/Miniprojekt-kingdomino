@@ -1,5 +1,5 @@
-import os
-import glob
+
+
 import cv2
 import numpy as np
 
@@ -17,7 +17,7 @@ def load_image(image_file_number):
     image_small = cv2.resize(image, (1200,800))
     return (image, image_small)
 
-image_files = glob.glob("DSC_*.JPG")
+image_files = ["C:/Users/salah/OneDrive - Aalborg Universitet/Desktop/King Domino dataset/Full game areas/DSC_1263.JPG"]
 image_file_number = 0
 image, image_small = load_image(image_file_number)
 
